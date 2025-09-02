@@ -2,46 +2,94 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Termos de Uso | Amor Sem Fronteiras</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termos de Uso</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
-      color: #333;
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-      line-height: 1.6;
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-image: url('fundo.png'); /* Substitua pelo nome da imagem */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #ffffff;
     }
-    h1 {
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .voltar {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .voltar:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    h1, h2 {
       text-align: center;
-      margin-bottom: 40px;
-    }
-    h2 {
-      margin-top: 30px;
-      color: #444;
-    }
-    p {
-      margin-bottom: 15px;
-    }
-    ul {
+      color: #ffffff;
       margin-bottom: 20px;
     }
-    footer {
-      margin-top: 60px;
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 16px;
+      text-align: justify;
+    }
+
+    .footer {
       text-align: center;
-      font-size: 0.9em;
-      color: #777;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #cccccc;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="overlay">
+    <div class="container">
+      <button onclick="history.back()" class="voltar">← Voltar</button>
+      <h1>📑 Termos de Uso</h1>
+      <h2>Amor Sem Fronteiras App</h2>
 
-  <h1>📑 Termos de Uso</h1>
-  <p style="text-align:center;"><strong>Amor Sem Fronteiras App</strong></p>
-
-  <h2>1. Objeto e aceite</h2>
+      <h2>1. Objeto e aceite</h2>
   <p>Estes Termos de Uso regulam as condições de acesso e utilização do Amor Sem Fronteiras App. Ao se cadastrar e utilizar a Plataforma, o usuário concorda integralmente com estes Termos.</p>
 
   <h2>2. Cadastro e conta</h2>
@@ -90,9 +138,8 @@
   <p>Estes Termos são regidos pela legislação brasileira.</p>
   <p>Fica eleito o foro da comarca de domicílio do usuário, salvo disposição legal diversa.</p>
 
-  <footer>
-    Amor sem Fronteiras © 2025
-  </footer>
-
+      <div class="footer">Amor sem Fronteiras © 2025</div>
+    </div>
+  </div>
 </body>
 </html>

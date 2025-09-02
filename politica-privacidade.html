@@ -2,40 +2,91 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Política de Privacidade | Amor Sem Fronteiras</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
-      color: #333;
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-      line-height: 1.6;
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-image: url('fundo.png'); /* Substitua pelo nome da imagem */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #ffffff;
     }
-    h1 {
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .voltar {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .voltar:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    h1, h2 {
       text-align: center;
-      margin-bottom: 40px;
+      color: #ffffff;
+      margin-bottom: 20px;
     }
-    h2 {
-      margin-top: 30px;
-      color: #444;
-    }
+
     p {
-      margin-bottom: 15px;
+      line-height: 1.6;
+      margin-bottom: 16px;
+      text-align: justify;
     }
-    footer {
-      margin-top: 60px;
+
+    .footer {
       text-align: center;
-      font-size: 0.9em;
-      color: #777;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #cccccc;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
 <body>
-
-  <h1>📑 Política de Privacidade</h1>
+  <div class="overlay">
+    <div class="container">
+      <button onclick="history.back()" class="voltar">← Voltar</button>
+      <h1>📑 Política de Privacidade</h1>
   <p style="text-align:center;"><strong>Amor Sem Fronteiras App</strong></p>
 
   <h2>1. Introdução</h2>
@@ -87,9 +138,8 @@
   <h2>8. Contato</h2>
   <p>Para exercer direitos ou sanar dúvidas sobre a privacidade, o usuário poderá entrar em contato pelo canal oficial: <em>[inserir e-mail de contato/telefone oficial do suporte]</em>.</p>
 
-  <footer>
-    Amor sem Fronteiras © 2025
-  </footer>
-
+      <div class="footer">Amor sem Fronteiras © 2025</div>
+    </div>
+  </div>
 </body>
 </html>
